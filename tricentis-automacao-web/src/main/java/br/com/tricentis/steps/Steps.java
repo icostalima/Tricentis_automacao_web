@@ -11,19 +11,12 @@ import io.cucumber.java.en.When;
 
 public class Steps {
 
-	VehicleDataPage vehicleDataPage;
-	InsurantDataPage insurantDataPage;
-	ProductDataPage productDataPage;
-	PriceOptionPage priceOptionPage;
-	SendQuotePage sendQuotePage;
+	VehicleDataPage vehicleDataPage = new VehicleDataPage();
+	InsurantDataPage insurantDataPage= new InsurantDataPage();
+	ProductDataPage productDataPage= new ProductDataPage();
+	PriceOptionPage priceOptionPage= new PriceOptionPage();
+	SendQuotePage sendQuotePage= new SendQuotePage();
 
-	public Steps() {
-		vehicleDataPage = new VehicleDataPage();
-		insurantDataPage = new InsurantDataPage();
-		productDataPage = new ProductDataPage();
-		priceOptionPage = new PriceOptionPage();
-		sendQuotePage = new SendQuotePage();
-	}
 
 	@Given("que estou na pagina de cadastro do seguro tricentis")
 	public void queEstouNaPaginaDeCadastroDoSeguroTricentis() {
